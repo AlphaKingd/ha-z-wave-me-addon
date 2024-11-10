@@ -16,7 +16,8 @@ hassio_api: true
 url: https://github.com/z-wave-me/ha-z-wave-me-addon/  # Add-on repository URL
 image: "ghcr.io/z-wave-me/{arch}-ha-z-wave-me-addon"  # Docker image for the add-on
 ports:
-  8083/tcp: 8083  # Main ports to forward
+  8083/tcp: 8083
+  8084/tcp: 8084 # Main ports to forward
 ports_description:
   8083/tcp: Z-Way UI  # Description for main ports
 webui: http://[HOST]:[PORT:8083]  # Add-on interface URL
